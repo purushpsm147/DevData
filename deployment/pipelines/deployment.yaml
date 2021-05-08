@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tsa-db
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tsa-data-db
+  template:
+    metadata:
+      labels:
+        app: tsa-data-db
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: tsa-db
+        image: acrdevtsastr01.azurecr.io/tsa-data:$(Build.BuildId)
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: 300m
+            memory: 256Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+        ports:
+        - containerPort: 80
+          name: tsa-db

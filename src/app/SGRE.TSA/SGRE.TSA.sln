@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGRE.TSA.DataStore.API", "SGRE.TSA.DataStore.API\SGRE.TSA.DataStore.API.csproj", "{00933D3A-167C-4B47-804C-344D42B3ED63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SGRE.TSA.Test", "SGRE.TSA.Test\SGRE.TSA.Test.csproj", "{72944A3E-5B84-4EF8-8E4E-3DACD4594764}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00933D3A-167C-4B47-804C-344D42B3ED63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00933D3A-167C-4B47-804C-344D42B3ED63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00933D3A-167C-4B47-804C-344D42B3ED63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00933D3A-167C-4B47-804C-344D42B3ED63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72944A3E-5B84-4EF8-8E4E-3DACD4594764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72944A3E-5B84-4EF8-8E4E-3DACD4594764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72944A3E-5B84-4EF8-8E4E-3DACD4594764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72944A3E-5B84-4EF8-8E4E-3DACD4594764}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F091768-50B8-4910-9015-C5B69F443427}
+	EndGlobalSection
+EndGlobal

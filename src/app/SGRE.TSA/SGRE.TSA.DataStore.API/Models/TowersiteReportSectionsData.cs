@@ -1,0 +1,33 @@
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SGRE.TSA.DataStore.API.Models
+{
+    public class TowersiteReportSectionsData : Audit
+    {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        [Required]
+        public Guid SstUuid { get; set; }
+
+        [Required]
+        public int SectionNr { get; set; }
+
+        [StringLength(64, ErrorMessage = "SectionType field exceeded maximum length")]
+        public string SectionType { get; set; }
+
+        [Required]
+        public decimal UpperFlangeExternalDiameterM { get; set; }
+
+        [Required]
+        public decimal LowerFlangeExternalDiameterM { get; set; }
+
+        [Required]
+        public decimal SectionLengthM { get; set; }
+
+        [Required]
+        public decimal SectionWeightKg { get; set; }       
+    }
+}
